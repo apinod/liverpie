@@ -20,7 +20,8 @@ WORKDIR /home/liverpie
 
 COPY launch.rb .
 
-COPY config.yml config/liverpie.yml
+#COPY config.yml config/liverpie.yml
+VOLUME ["/home/liverpie/config"]
 
 #CMD ["./bin/liverpie", "-h"]
 CMD ["ruby", "-I", ".", "launch.rb"]
