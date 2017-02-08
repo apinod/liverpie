@@ -24,3 +24,5 @@ COPY config.yml config/liverpie.yml
 
 #CMD ["./bin/liverpie", "-h"]
 CMD ["ruby", "-I", ".", "launch.rb"]
+
+EXPOSE 8084
